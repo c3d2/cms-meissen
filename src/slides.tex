@@ -1,0 +1,149 @@
+\documentclass[12pt]{beamer}
+%\documentclass[20pt,handout]{beamer}
+\usetheme{Darmstadt}
+\usepackage{graphicx}
+\usepackage[german]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{tikz}
+\setbeamertemplate{footline}[frame number]
+
+\newcommand{\cc}[1]{\includegraphics[height=4mm]{img/#1.png}}
+\usepackage{ifthen}
+\newcommand{\license}[2][]{\\#2\ifthenelse{\equal{#1}{}}{}{\\\scriptsize\url{#1}}}
+\usepackage{textcomp}
+
+\pgfdeclareimage[height=.6cm]{c3d2logo}{./img/c3d2.pdf} 
+
+
+\pgfdeclarelayer{foreground}
+\pgfsetlayers{main,foreground}
+\logo{\pgfputat{\pgfxy(-1,0)}{\pgfbox[center,base]{\pgfuseimage{c3d2logo}}}}
+
+
+\title{NSA, Prism und co - Wie schützt man sich vor Überwachung?}
+\author{\small Marius Melzer \& Stephan Thamm\\\large Chaos Computer Club Dresden}
+\date{16.10.2013}
+
+\begin{document}
+\maketitle
+
+\section{Einleitung}
+\subsection{}
+
+\begin{frame}
+  \frametitle{Wer sind wir?}
+  \begin{figure}
+    \includegraphics[height=0.7\textheight]{img/fingerabdruck.jpg}
+  \end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Wer sind wir?}
+  \begin{figure}
+    \includegraphics[height=0.7\textheight]{img/trojaner.jpg}
+  \end{figure}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Wer sind wir?}
+    \begin{itemize}
+      \item<1-> Chaos Computer Club Dresden (\url{http://c3d2.de})
+          \note{}
+      \item<2-> Datenspuren: Herbst 2014 \url{http://datenspuren.de}
+      \item<3-> Podcasts (\url{http://pentamedia.de})
+      \item<4-> Chaos macht Schule
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Agenda}
+    \begin{itemize}
+      \item Vertraulichkeit
+      \item Integrität
+      \item Anonymität
+    \end{itemize}
+\end{frame}
+
+\section{Vertraulichkeit}
+\subsection{}
+
+\section{Integrität}
+\subsection{}
+
+\begin{frame}
+    \frametitle{Infrastruktur}
+    Wahrung der Integrität des Netzes möglich durch:
+    \begin{itemize}
+      \item<1-> Netzneutralität
+      \item<2-> Dezentrale, internationale und transparente Aufsicht über Infrastruktur
+      \item<3-> Abkommen zu Cyberwar und integrität fremder Netze
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Zensur}
+    \includegraphics[height=0.7\textheight]{img/zensur-guardian.jpg}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Arten von Zensur}
+    \begin{itemize}
+      \item<1-> DNS-basiert
+      \item<2-> IP-basiert
+      \item<3-> Inhaltsbasiert
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
+    \frametitle{TOR}
+    \includegraphics[height=0.7\textheight]{img/tor1.png}
+\end{frame}
+
+\begin{frame}
+    \frametitle{TOR}
+    \includegraphics[height=0.7\textheight]{img/tor2.png}
+\end{frame}
+
+\begin{frame}
+    \frametitle{TOR}
+    \includegraphics[height=0.7\textheight]{img/tor3.png}
+\end{frame}
+
+\begin{frame}
+    \frametitle{TOR}
+    \includegraphics[height=0.7\textheight]{img/vidalia.png}
+\end{frame}
+
+\begin{frame}
+    \frametitle{TOR}
+    \begin{center} \Large Bridges \end{center}
+\end{frame}
+
+\begin{frame}
+    \frametitle{TOR}
+    \includegraphics[height=0.7\textheight]{img/bridge1.png}
+\end{frame}
+
+\begin{frame}
+    \frametitle{TOR}
+    \includegraphics[height=0.7\textheight]{img/bridge2.png}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Collusion}
+    \begin{center} \Large Collusion \end{center}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Gegenmaßnahmen}
+    \begin{center} \Large Pseudonymität \end{center}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Gegenmaßnahmen}
+    \begin{center} \Large Pseudonymität \end{center}
+\end{frame}
+
+
+\end{document}
